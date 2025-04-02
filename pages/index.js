@@ -5,6 +5,14 @@ export default function Home() {
   return (
     <div>
       <Head>
+<Head>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="fc:frame" content="vNext" />
+  <meta property="fc:frame:image" content="https://あなたのドメイン/preview.png" />
+  <meta property="fc:frame:button:1" content="Play Now" />
+  <meta property="fc:frame:post_url" content="https://あなたのドメイン/api/entry" />
+
         <title>Idol Shooter</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

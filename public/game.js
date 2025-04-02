@@ -351,6 +351,31 @@ document.getElementById("rightBtn").addEventListener("mouseup", () => {
 
 document.getElementById("shootBtn").addEventListener("click", shoot);
 
+// 左ボタン
+document.getElementById("leftBtn").addEventListener("touchstart", (e) => {
+  e.preventDefault();
+  moveLeft = true;
+  player.image = playerImages.left;
+});
+document.getElementById("leftBtn").addEventListener("touchend", (e) => {
+  e.preventDefault();
+  moveLeft = false;
+  player.image = playerImages.front;
+});
+
+// 右ボタン
+document.getElementById("rightBtn").addEventListener("touchstart", (e) => {
+  e.preventDefault();
+  moveRight = true;
+  player.image = playerImages.right;
+});
+document.getElementById("rightBtn").addEventListener("touchend", (e) => {
+  e.preventDefault();
+  moveRight = false;
+  player.image = playerImages.front;
+});
+
+
 document.addEventListener("keydown", e => {
   if (e.key === "ArrowLeft") {
     moveLeft = true;

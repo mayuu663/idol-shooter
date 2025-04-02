@@ -5,16 +5,12 @@ export default function Home() {
   return (
     <div>
       <Head>
-
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta property="fc:frame" content="vNext" />
-  <meta property="fc:frame:image" content="https://あなたのドメイン/preview.png" />
-  <meta property="fc:frame:button:1" content="Play Now" />
-  <meta property="fc:frame:post_url" content="https://あなたのドメイン/api/entry" />
-
-        <title>Idol Shooter</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="fc:frame" content="vNext" />
+        <meta property="fc:frame:image" content="https://あなたのドメイン/preview.png" />
+        <meta property="fc:frame:button:1" content="Play Now" />
+        <meta property="fc:frame:post_url" content="https://あなたのドメイン/api/entry" />
+        <title>Idol Shooter</title>
       </Head>
 
       {/* Start Screen */}
@@ -29,9 +25,9 @@ export default function Home() {
           background: '#111',
           color: '#fff',
           textAlign: 'center',
-          backgroundImage: 'url(/preview.png)', // ここで背景画像を設定
-          backgroundSize: 'cover', // 画面全体に画像をフィットさせる
-          backgroundPosition: 'center', // 画像を中央に配置
+          backgroundImage: 'url(/preview.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
         }}
       >
         <h1 style={{ fontSize: '2.5rem' }}>🎤 Idol Shooter</h1>

@@ -398,3 +398,48 @@ document.addEventListener("keyup", e => {
     player.image = playerImages.front;
   }
 });
+
+// スマホタッチ + タップ対策（ログ付き！）
+document.getElementById("leftBtn").addEventListener("touchstart", (e) => {
+  e.preventDefault();
+  console.log("LEFT TOUCH START");
+  moveLeft = true;
+  player.image = playerImages.left;
+});
+document.getElementById("leftBtn").addEventListener("touchend", (e) => {
+  e.preventDefault();
+  console.log("LEFT TOUCH END");
+  moveLeft = false;
+  player.image = playerImages.front;
+});
+document.getElementById("leftBtn").addEventListener("click", () => {
+  console.log("LEFT CLICK");
+  moveLeft = true;
+  player.image = playerImages.left;
+  setTimeout(() => {
+    moveLeft = false;
+    player.image = playerImages.front;
+  }, 100);
+});
+
+document.getElementById("rightBtn").addEventListener("touchstart", (e) => {
+  e.preventDefault();
+  console.log("RIGHT TOUCH START");
+  moveRight = true;
+  player.image = playerImages.right;
+});
+document.getElementById("rightBtn").addEventListener("touchend", (e) => {
+  e.preventDefault();
+  console.log("RIGHT TOUCH END");
+  moveRight = false;
+  player.image = playerImages.front;
+});
+document.getElementById("rightBtn").addEventListener("click", () => {
+  console.log("RIGHT CLICK");
+  moveRight = true;
+  player.image = playerImages.right;
+  setTimeout(() => {
+    moveRight = false;
+    player.image = playerImages.front;
+  }, 100);
+});
